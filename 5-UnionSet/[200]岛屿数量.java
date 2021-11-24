@@ -106,42 +106,5 @@ class Solution {
             }
         }
     }
-
-//    class UnionSet {
-//        int[] fa;
-//        int[] sizes;
-//        int size;
-//
-//        public UnionSet(int size) {
-//            this.size = size;
-//            this.sizes = new int[size];
-//            this.fa = new int[size];
-//            for (int i = 0; i < size; i++) {
-//                fa[i] = i;
-//                sizes[i] = 1;
-//            }
-//        }
-//
-//        public int get(int x) {
-//            if (x == fa[x]) return x;
-//            int root = get(fa[x]);
-//            fa[x] = root;
-//            return root;
-//        }
-//
-//        public void merge(int a, int b) {
-//            System.out.println(a + " " + b);
-//            int ffa = get(a);
-//            int ffb = get(b);
-//            if (ffa == ffb) return;
-//            if (sizes[ffa] < sizes[ffb]) {
-//                fa[ffa] = ffb;
-//                sizes[ffb] += sizes[ffa];
-//            } else {
-//                fa[ffb] = ffa;
-//                sizes[ffa] += sizes[ffb];
-//            }
-//        }
-//    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
